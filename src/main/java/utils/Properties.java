@@ -5,13 +5,13 @@ public class Properties {
     private static String chatId;
     private static String botUsername;
     private static String botToken;
-
-
-    public static void setChatId(String chatId){
+    
+    public static void setChatId(String chatId) {
         Properties.chatId = chatId;
     }
-    public static String getChatId(){
-        return chatId; //"391800117"
+
+    public static String getChatId() {
+        return chatId;
     }
 
     public static void setBotUsername(String botUsername) {
@@ -19,7 +19,7 @@ public class Properties {
     }
 
     public static String getBotUsername() {
-        return botUsername; //"HappyNewYear2020_bot"
+        return botUsername;
     }
 
     public static void setBotToken(String botToken) {
@@ -27,6 +27,6 @@ public class Properties {
     }
 
     public static String getBotToken() {
-        return botToken; //"1062671308:AAHa_UFnqudmgGVMZUqGfVnk0dY0glZkHMQ"
+        return botToken;
     }
 }
