@@ -11,7 +11,10 @@ import utils.Properties;
 public class Bot extends TelegramLongPollingBot {
 
     Bot() {
-        long newYearTime = 1577180640000L; //1577826000000L;        //https://www.fileformat.info/tip/java/date2millis.htm
+        /*
+        * //https://www.fileformat.info/tip/java/date2millis.htm
+         */
+        long newYearTime = 1577826000000L;
         Date newYearDate = new Date(newYearTime);
         while (new Date().before(newYearDate)) {
             try {
@@ -22,8 +25,11 @@ public class Bot extends TelegramLongPollingBot {
         }
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
+        /*
+        * https://api.telegram.org/botBOT:TOKEN/getChat?chat_id=@channelName
+         */
         sendMessage.setChatId(Properties.getChatId());
-        sendMessage.setText("Happy New Year! \nI wish you ... \nAnd of course i have a present for you!");
+        sendMessage.setText("Happy New Year! \nWishing you ... \nAnd of course somewhere i hided a gift for you!");
         sendMsg(sendMessage);
     }
 

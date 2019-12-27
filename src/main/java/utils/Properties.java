@@ -5,7 +5,7 @@ public class Properties {
     private static String chatId;
     private static String botUsername;
     private static String botToken;
-    
+
     public static void setChatId(String chatId) {
         Properties.chatId = chatId;
     }

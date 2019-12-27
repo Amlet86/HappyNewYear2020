@@ -20,8 +20,8 @@ public class ProcessingMessage extends AbstractMessage {
             qa.put(nextLine[0], nextLine[1]);
         }
         for (Map.Entry<String, String> e : qa.entrySet()) {
-            if (e.getKey().contains(question))
-                answer = qa.get(question);
+            if (question.contains(e.getKey()))
+                answer = qa.get(e.getKey());
         }
         return answer;
     }

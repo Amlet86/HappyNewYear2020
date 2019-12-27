@@ -16,7 +16,7 @@ public class InitializerTelegramBot {
         System.getProperties().put("socksProxyPort", "9150");
     }
 
-    public static Bot startTelegramBot() {
+    public static void startTelegramBot() {
         setVPNThroughTOR();
 
         ApiContextInitializer.init();
@@ -30,7 +30,6 @@ public class InitializerTelegramBot {
         }
 
         FileWorker.writeUserDataFile();
-        return bot;
     }
 
 }
