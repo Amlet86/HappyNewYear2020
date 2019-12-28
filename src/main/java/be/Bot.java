@@ -29,7 +29,7 @@ public class Bot extends TelegramLongPollingBot {
         * https://api.telegram.org/botBOT:TOKEN/getChat?chat_id=@channelName
          */
         sendMessage.setChatId(Properties.getChatId());
-        sendMessage.setText("Happy New Year! \nWishing you ... \nAnd of course somewhere i hided a gift for you!");
+        sendMessage.setText("Happy New Year! \nI want you to realize every item on your wish list next year, and to help you get started, I have a gift that's hidden somewhere.");
         sendMsg(sendMessage);
     }
 
